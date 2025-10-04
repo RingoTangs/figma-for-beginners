@@ -489,6 +489,8 @@ Landing Page Hero 展示效果如下：
 
 
 
+### Create multiple components at once
+
 同时，还可以通过选择两个或者多个图层/对象，单击右侧边栏顶部 "create multiple components" 按钮来一次性创建多个组件。
 
 ![Create Multiple Components](./images/37-CreateMultipleComponents.png)
@@ -497,11 +499,65 @@ Landing Page Hero 展示效果如下：
 
 ### Create instance
 
+一旦创建了主要组件(Main component)，就可以将其实例添加到设计中。
+
+要添加组件实例，需要在画布上复制主要组件(Main component)。
+
+有两种方案添加组件实例：
+
+1. 按住键盘 `ALT`，单击选中组件并拖动。
+2. 左侧边栏 Assets 选项卡中，选择主要组件，并拖动到画布(Canvas)上。
+
+![Create Instance](./images/38-CreateInstance.png)
+
+### What is an instance
+
+组件实例的图标是紫色菱形框，和Main component的图标有所区分。
+
+![Main component or instance](./images/40-MainComponentOrInstance.png)
+
+组件实例与其 Main component 相连，这就意味着对 Main component 所作出的更改会自动应用于同一文件中该组件的每个实例。
+
+### Apply changes to instances
+
+有时可能希望组件实例和 Main component 部分不同。
+
+Figma 支持更改实例的某些属性，包括：
+
+- 文本(text)
+- 填充(fill)
+- 描边(stroke)
+- 大小(size)
+
+这些属性的修改都不会破坏组件实例和 Main component 的连接。
 
 
 
+当决定在组件实例上使用默认属性，Figma 支持随时重置更改。
+
+也可以将组件实例的更改推送到 Main component 以及其他任何组件实例中。
+
+![Reset instance](./images/41-ResetInstance.png)
 
 
+
+### Detach an instance
+
+请记住，有些东西无法在组件实例上进行修改，因为这和 Main component 的结构相关。
+
+例如，不能在组件实例中添加删除图层、重新排序图层，也无法修改应用于图层的任何约束。
+
+如果需要进行更广泛的更改，可以分离一个实例，断开组件实例和 Main component 的连接，这意味着组件实例将不会从 Main component 接收任何的更新。
+
+![Detach Instance](./images/42-DetachInstance.png)
+
+分离实例(Detaching an instance)可能很有用，但请记住，一旦实例和 Main component 分离，它将无法在将来重新连接到 Main component。
+
+如果不小心分离了组件实例，可以使用 `CTRL + Z` 快捷键进行回退。
+
+
+
+## Create the card and container system
 
 
 
@@ -530,3 +586,24 @@ Landing Page Hero 展示效果如下：
 
 - windows：`CTRL + ALT + K`。
 - macos：`OPT + CMD + K`。
+
+## Duplicate main component
+
+复制主要组件(Main component)创建实例。
+
+按住键盘 `ALT`，单击选中组件并拖动。
+
+- windows：`ALT `。
+- macos：`OPT`。
+
+## Detach instance
+
+分离组件实例和 Main component 的连接。
+
+- windows：`CTRL + ALT + B `。
+- macos：`OPT + CMD + B`。
+
+## Undo
+
+- windows：`CTRL + Z `。
+- macos：`CMD + Z`。
